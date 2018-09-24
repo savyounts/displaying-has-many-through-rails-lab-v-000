@@ -10,4 +10,8 @@ class Appointment < ActiveRecord::Base
     self.doctor.name
   end
 
+  def date
+    self.appointment_datetime.strftime('%B %d, %Y')
+  end
+
 end
