@@ -1,8 +1,8 @@
-<%= @doctor.name %>
-<%= @doctor.department %>
+<%= @doctor.name %><br>
+<%= @doctor.department %><br>
 
-Appointments:
+Appointments:<br>
 <% @doctor.appointments.each do |a| %>
-  <%= a.appointment_datetime%>
+  <%= a.appointment_datetime%><br>
   <%= link_to a.patient_name, patient_path(a.patient) %><br><br>
 <% end %>
