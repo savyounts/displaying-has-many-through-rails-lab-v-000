@@ -7,7 +7,7 @@ class Appointment < ActiveRecord::Base
   end
 
   def doctor_name
-    self.doctor.name.
+    self.doctor.name
   end
 
 end
