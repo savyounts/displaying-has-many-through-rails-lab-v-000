@@ -1,4 +1,4 @@
-class Appointment < Application_Controller
+class AppointmentsController < ApplicationController
 
   def index
     @appointments = Appointment.all
