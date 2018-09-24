@@ -1,4 +1,4 @@
-class Doctor < Application_Controller
+class Doctor < ApplicationController
 
   def index
     @doctors = Doctor.all
