@@ -2,8 +2,8 @@ class CreateAppointments < ActiveRecord::Migration
   def change
     create_table :appointments do |t|
       t.string :appointment_datetime
-      t.integer :paitent_id
-      t.integer :doctor_id
+      t.belongs_to :paitent
+      t.belongs_to :doctor
 
       t.timestamps null: false
     end
